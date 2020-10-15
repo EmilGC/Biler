@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+    <div class="car-container">
+        <div>
+            <h1>Add new car</h1>
+        </div>
+        <div class="createCarTable">
+            <form action="/create-car" method="POST">
+                <div class="form-group row">
+                    <input type="text" name="description" placeholder="please enter description" class="form/control col-6">
+                </div>
+                <div class="form-group row">
+                    <input type="number" name="numberOfDoors" placeholder="please enter number of doors" class="form/control col-6">
+                </div>
+                <div class="form-group row">
+                    <input type="number" name="horsePower" placeholder="please enter horse power" class="form/control col-6">
+                </div>
+                <div class="form-group row">
+                    <input type="text" name="type" placeholder="please enter type" class="form/control col-6">
+                </div>
+                <div class="form-group row">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>
